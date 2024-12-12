@@ -7,9 +7,6 @@ df = pd.read_csv('D:/week1 data/raw_analyst_ratings.csv')
 # Calculate the length of each headline 
 df['headline_length'] = df['headline'].apply(len) 
 
-# Display the first few rows with the new length column 
-print(df.head())
-
 # Obtain basic statistics for headline lengths 
 length_stats = df['headline_length'].describe() 
 
@@ -24,7 +21,7 @@ articles_per_publisher = df['publisher'].value_counts()
 print("Number of articles per publisher:") 
 print(articles_per_publisher)
 
-# Convert 'publish_date' to datetime
+# Convert 'date' to datetime
 df['date'] = pd.to_datetime(df['date'], errors='coerce')
 
 # Drop rows with missing dates
