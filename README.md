@@ -5,7 +5,7 @@ o	Basic statistics for headline lengths have been calculated and displayed. This
 o	The number of articles contributed by each publisher has been counted and displayed. This helps identify the most active publishers in the dataset.
 3.	Yearly Trends:
 o	The publication dates have been converted to datetime, missing dates have been handled, and the data has been grouped by year to display trends in publication frequency over time. Publication of articles is increasing over time. 
- 
+
 Methodology
 1.	Data Loading and Preprocessing:
 o	The CSV file was loaded into a pandas DataFrame.
@@ -14,6 +14,7 @@ o	Articles were counted per publisher using the value_counts() method in pandas 
 3.	Publication Trends Analysis:
 o	Publication dates were converted to datetime format and grouped by year to visualize trends.
 o	Trends were visualized using matplotlib to illustrate the distribution over time.
+
 Initial Findings on Text Analysis (Sentiment analysis & Topic Modeling):
 1.	Categorizing Sentiment:
 o	A function to categorize sentiment scores as positive, negative or neutral has been defined.
@@ -28,6 +29,7 @@ This breakdown reveals that the majority of the headlines are neutral in sentime
 Methodology
 • The VADER sentiment intensity analyzer from the nltk library was used to categorize sentiment scores as positive, negative, or neutral.
 • Sentiment distribution was counted and visualized.
+
 Initial Findings on Time Series Analysis:
 1.	Monthly Publication Frequency Over Time:
 o	The first plot shows the monthly trends in publication frequency, providing a clear visualization of how often news articles are published each month.
@@ -35,6 +37,7 @@ o	The first plot shows the monthly trends in publication frequency, providing a 
 o	The second plot highlights the impact of specific market events on publication frequency by adding vertical lines for the dates of these events. By overlaying specific market events on the publication frequency timeline, distinct spikes were observed around the year 2020.
 3.	Hourly Publication Trends:
 o	The analysis of hourly publication times reveals specific hours when news articles are most frequently published. This information is crucial for understanding peak times of news activity, which can be valuable for traders and automated trading systems.
+
 Methodology
 1.	Data Loading and Preprocessing:
 o	Loads the dataset into a pandas DataFrame.
@@ -45,10 +48,12 @@ o	Resamples the data to get monthly publication counts.
 o	Plots the monthly publication frequency over time.
 3.	Highlighting Specific Market Events:
 o	Adds vertical lines to the plot to indicate specific market events, making it easier to correlate spikes in publication frequency with these events.
+
 Conclusion
 The analysis successfully identified variations in monthly publication frequencies and correlated these with significant market events. This insight is valuable for understanding how external events can drive media activity and influence news coverage.
 It also provided valuable insights into the distribution of news publications throughout the day, highlighting peak hours of activity. This information can help optimize the timing of news releases and improve the efficiency of automated trading systems by aligning with periods of high news activity.
-Initial Findings
+
+Initial Findings on Publisher Analysis
 1.	Number of Articles per Publisher:
 o	The analysis identified the number of articles contributed by each publisher. The results highlighted the most active publishers.
 Methodology
@@ -58,14 +63,8 @@ o	Articles per publisher were counted using the value_counts() method.
 o	The data was grouped by publisher and news type using the groupby() method, and unstacked for a clear visualization of the distribution.
 2.	Visualization:
 o	A bar plot was created to display the number of articles per publisher.
-o	A stacked bar plot was used to visualize the distribution of news types by publisher, which illustrated the variety and focus areas of different publishers.
 
 Challenges Encountered
 1.	Date Parsing:
 o	Some publication dates were not in a standard format, requiring additional preprocessing steps to handle missing or invalid dates.
-2.	Text Preprocessing:
-o	Ensuring accurate calculation of headline lengths and handling of missing data (e.g., headlines) required careful text preprocessing.
-3.	Visualization:
-o	Balancing the readability and informativeness of visualizations, especially for bar charts representing articles per publisher and monthly trends, was crucial.
-
 
