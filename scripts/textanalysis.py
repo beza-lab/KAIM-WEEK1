@@ -37,7 +37,7 @@ print(sentiment_distribution)
 
 # Plot the sentiment distribution 
 plt.figure(figsize=(8, 6)) 
-sentiment_distribution.plot(kind='bar', color=['green', 'red', 'gray']) 
+sentiment_distribution.plot(kind='bar', color=['green', 'red', 'blue']) 
 plt.title('Sentiment Distribution of Headlines') 
 plt.xlabel('Sentiment') 
 plt.ylabel('Number of Headlines') 

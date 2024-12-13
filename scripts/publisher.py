@@ -11,7 +11,6 @@ articles_per_publisher = df['publisher'].value_counts()
 print("Number of articles per publisher:")
 print(articles_per_publisher)
 
-# Assuming there's a column named 'news_type'
 # Group by publisher and news type
 news_type_by_publisher = df.groupby(['publisher', 'headline']).size().unstack(fill_value=0)
 
