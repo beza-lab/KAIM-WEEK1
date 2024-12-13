@@ -35,7 +35,7 @@ sentiment_distribution = df['sentiment'].value_counts()
 print("Sentiment Distribution:")
 print(sentiment_distribution)
 
-# Plot the sentiment distribution 
+# Plot the sentiment distribution bar chart 
 plt.figure(figsize=(8, 6)) 
 sentiment_distribution.plot(kind='bar', color=['green', 'red', 'blue']) 
 plt.title('Sentiment Distribution of Headlines') 
