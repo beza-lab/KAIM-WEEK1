@@ -2,8 +2,8 @@ import pandas as pd
 import talib
 import matplotlib.pyplot as plt
 
-# Load Meta historical data into a DataFrame
-df = pd.read_csv('D:/week1 data/yfinance_data/META_historical_data.csv')
+# Load Tesla historical data into a DataFrame
+df = pd.read_csv('D:/week1 data/yfinance_data/TSLA_historical_data.csv')
 
 # Check if the required columns are present 
 required_columns = ['Open', 'High', 'Low', 'Close', 'Volume'] 
