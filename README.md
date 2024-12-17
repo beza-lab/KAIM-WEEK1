@@ -2,3 +2,4 @@ This project focuses on the detailed analysis of a large corpus of financial new
 Quantitative analysis using pynance and TaLib
 use TA-Lib to calculate various technical indicators
 Use PyNance for Financial Metrics
+visuaize data using differnt indicators
