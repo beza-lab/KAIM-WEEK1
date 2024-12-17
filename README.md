@@ -68,3 +68,9 @@ Challenges Encountered
 1.	Date Parsing:
 o	Some publication dates were not in a standard format, requiring additional preprocessing steps to handle missing or invalid dates.
 
+This project also focuses on the detailed analysis of a large corpus of financial news data to discover correlations between news sentiment and stock market movements. 
+Quantitative analysis using pynance and TaLib
+use TA-Lib to calculate various technical indicators
+visuaize data using differnt indicators
+
+Load news and stock prices dataset. Compute the percentage change in daily closing prices to represent stock movements, Conduct sentiment analysis on news headlines. Then Use statistical methods to test the correlation between daily news sentiment scores and stock returns.
